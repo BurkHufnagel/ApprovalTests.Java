@@ -164,7 +164,7 @@ directory as your test.
 
 For the test to pass, this file must match:
 
-YourTestClass.youTestMethod.__approved__.txt
+YourTestClass.yourTestMethod.__approved__.txt
 
 There are many ways to do this:
 
@@ -173,15 +173,15 @@ There are many ways to do this:
 3. Use "use whole file" on a diff reporter
 4. Use the "approve" command with the approval plugin (available for Eclipse)
 
-Itʼs doesnʼt matter how you do it.
+It doesnʼt matter how you do it.
 
 __Note__: If the files match, then the received file will be deleted.<br>
 __Note__: You must include the received files in your source control.
 
 Reporters
 ---
-If an approval fails, then a report will be called that will report the “.received” and
-“.approved” files. There are many reporters, and you can create your own.
+If an approval fails, then a reporter will be called that will report the “.received” and
+“.approved” files. There are many reporters that already exist, and you can create your own.
 
 The simplest way to have your reporter called is to use the Annotation @UseReporter(Reporter.class)
 You can annotate at either the method or class level.
@@ -202,7 +202,7 @@ TextWebReporter      | Opens the text files in a Web browser
 
 Supported Reporters
 ---
-The following reporters are supported automatically. ApprovalTests will serach for the following
+The following reporters are supported automatically. ApprovalTests will search for the following
 applications in the following order on the respective platform:
 
 Mac OSX        | Specified as
